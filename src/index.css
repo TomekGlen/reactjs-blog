@@ -1,13 +1,299 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 1200px; }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.nav-link{
+    font-weight: 400;
+    font-size:80%;
+}
+
+.card {
+    box-shadow: none;
+    height: 100%;
+    display: flex;
+}
+.card-body{
+    padding:1rem;
+}
+.card-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card.card-footer {
+    align-self: flex-end;
+    flex: 1 1 auto;
+}
+
+.card-text{
+    font-size:90% !important;
+    height:130px;
+    overflow:hidden;
+    
+}
+.card-title{
+    font-weight: 400 !important;
+}
+.cardViews{
+    position: absolute;
+    top:5px;
+    right:10px;
+    color:#FFF;
+    font-size:80%;
+}
+li a{
+    font-size:15px;
+    color: #555;
+    font-weight: 300;
+}
+.elementList{
+    width: 100%;
+    padding-inline-start:18px;
+    margin-bottom:40px;
+}
+.list-overflow{
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    position: relative;
+    overflow: hidden;
+    margin-top:3px;
+    margin-bottom:3px;
+    font-weight: 300;
+}
+.navbar-logo{
+    max-height: 30px;
+}
+.navbar{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.02);
+    position: fixed;
+    z-index:99;
+    background:#FFF;
+    width:100%;
+}
+.title{
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.title2{
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom:60px;
+    margin-top:20px;
+    color:#FFF;
+    max-height:50px;
+    overflow: hidden;
+}
+.title2-main{
+    font-size:34px;
+    font-weight: 700;
+    color:#FFF;
+}
+.title:before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.title:after{
+    content: "";
+    display: block;
+    width: 45px;
+    z-index: 1;
+    position: relative;
+    border-bottom: 5px solid #99CC33;
+    margin-top:20px;
+}
+.list-photo{
+    list-style: none;
+    margin-left:-18px;
+    border-bottom: 1px solid #EEE;
+}
+.list-photo-kategoria{
+    color:#AAA;
+    font-size:80%;
+    margin-bottom:0.45rem;
+}
+.list-photo-naglowek{
+    font-size:80%;
+
+}
+.list-photo-div{
+    height:100px;
+    overflow: hidden;
+    margin:0;
+}
+.img-photo{
+    object-fit: cover;
+    height:100%; /*make image streatch*/
+}
+.archive-div{
+    font-size:90%;
+    padding:7px;
+    border-bottom:1px solid #EEE;
+    font-weight: 400;
+}
+a{
+    color:#99CC33;
+}
+a:hover{
+    color:#6b8f24;
+}
+footer{
+    background:#F8F8F8;
+    color:#555 !important;
+}
+.footer-desc{
+    font-weight: 400;
+    font-size:90%;
+    color:#999;
+}
+.footer-links{
+    padding-left:0px;
+}
+.footer-links a{
+    font-size:90%;
+    color:#AAA !important;
+    font-weight: 400;
+}
+.footer-links a:hover{
+    color:#6b8f24 !important;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+    display:grid;
+    align-items: center;
+    font-size:90%;
+}
+.f-title{
+    font-weight: 600;
+}
+.search-p{
+    font-size:80%;
+}
+.tag-div .btn-sm{
+    margin:3px;
+    padding:7px;
+    background:#3E5371 !important;
+}
+.logo-footer{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #EEE;
+}
+.pagination .active a{
+    background: #3E5371 !important;
+}
+.card-title-1{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    right: 20px;
+    
+}
+.card-title-1 h3{
+    font-weight: 700;
+    background: #FFF;
+    color:#555;
+    padding:10px !important;
+    display: table-cell;
+}
+.card-title-1 p{
+    margin-top:20px;
+    text-align: left;
+    font-size:80%;
+    max-height: 57px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.card-content-1{
+    height:100%;
+}
+.card-1{
+    background-position: center !important;
+    background-size: cover !important;
+    height:380px;
+}
+.page-header{
+    background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg'); 
+    transform: translate3d(0px, 0px, 0px);
+}
+.page-header{
+    height: 70vh;
+    overflow: hidden;
+}
+.page-header {
+    background-position: 50%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    margin-bottom:100px;
+}
+.header-filter:after{
+    background: rgba(56,56,56,.88);
+    background: linear-gradient(-90deg,rgba(255, 255, 255,.0),rgba(	56,56,56,.88));
+    background: -webkit-linear-gradient(-90deg,rgba(255, 255, 255,.0),rgba(	56,56,56,.88));
+}
+.header-filter:after, .header-filter:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+.show-top{
+    z-index:2;
+}
+.brand{
+    position: absolute;
+    bottom:0px;
+}
+.header-others{
+    margin-top:100px;
+    color:#FFF;
+}
+.header-others-cont{
+    padding:20px;
+    background: rgba(56,56,56,.68);
+}
+.header-article-p{
+    font-size:13px;
+}
+.header-article-p a{
+    font-weight: 500;
+    color:#99CC33;
+}
+.header-article-p{
+    color:#DDD;
+    animation-duration: 200ms;
+    border-bottom:1px solid #666;
+    padding-bottom:10px;
+}
+.header-article-p:hover span{
+    color:#FFF;
+    transition: 0.3s;
+}
+.header-article-p span{
+    transition: 0.3s;
+}
+.brand .btn {
+    padding:6px 14px;
+    background: #99CC33 !important;
 }
