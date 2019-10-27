@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-js-blog/static/css/main.40a5a7b4.chunk.css",
+    "main.js": "/react-js-blog/static/js/main.f11e737f.chunk.js",
+    "main.js.map": "/react-js-blog/static/js/main.f11e737f.chunk.js.map",
+    "runtime-main.js": "/react-js-blog/static/js/runtime-main.dd0cec70.js",
+    "runtime-main.js.map": "/react-js-blog/static/js/runtime-main.dd0cec70.js.map",
+    "static/css/2.f4ef855d.chunk.css": "/react-js-blog/static/css/2.f4ef855d.chunk.css",
+    "static/js/2.900868f2.chunk.js": "/react-js-blog/static/js/2.900868f2.chunk.js",
+    "static/js/2.900868f2.chunk.js.map": "/react-js-blog/static/js/2.900868f2.chunk.js.map",
+    "index.html": "/react-js-blog/index.html",
+    "precache-manifest.b83c5a06f6f0a11101fe0073e914a227.js": "/react-js-blog/precache-manifest.b83c5a06f6f0a11101fe0073e914a227.js",
+    "service-worker.js": "/react-js-blog/service-worker.js",
+    "static/css/2.f4ef855d.chunk.css.map": "/react-js-blog/static/css/2.f4ef855d.chunk.css.map",
+    "static/css/main.40a5a7b4.chunk.css.map": "/react-js-blog/static/css/main.40a5a7b4.chunk.css.map",
+    "static/media/mdb.css": "/react-js-blog/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/all.min.css": "/react-js-blog/static/media/fa-solid-900.c2801fb4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd0cec70.js",
+    "static/css/2.f4ef855d.chunk.css",
+    "static/js/2.900868f2.chunk.js",
+    "static/css/main.40a5a7b4.chunk.css",
+    "static/js/main.f11e737f.chunk.js"
+  ]
+}
