@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import {MDBCol, MDBContainer, MDBRow, MDBIcon, MDBFormInline, MDBBtn } from 'mdbreact';
 import Card from './Card'
-import CardBig from './CardBig'
 import List from './List'
 import ListPhoto from './ListPhoto'
 import PaginationPage from './PaginationPage'
@@ -10,10 +9,14 @@ import ListArchive from './ListArchive'
 import cardsData from './CardsData'
 import tagsData from './tagsData'
 
-function CardsSection(){
-    const cardComponents = cardsData.map(card => <Card key={card.id} imgSrc={card.imgSrc} title={card.title} text={card.tekst} />)
+import Slider from './Slider'
+
+const Home = () => {
+    const cardComponents = cardsData.map(card => <Card size="6" fontSize="100%" key={card.id} imgSrc={card.imgSrc} title={card.title} text={card.tekst} />)
   const tagComponents = tagsData.map(tag => <MDBBtn className="btn-sm">{tag.tag}</MDBBtn>)
     return(
+        <div>
+        <Slider />
       <MDBContainer>
         <MDBRow>
           <MDBCol lg="9" md="12">
@@ -97,6 +100,7 @@ function CardsSection(){
           </MDBCol>
         </MDBRow>
       </MDBContainer>
+      </div>
     )
 }
-export default CardsSection
+export default Home

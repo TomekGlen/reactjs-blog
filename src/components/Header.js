@@ -1,13 +1,10 @@
 import React, {Component} from "react";
-import { Parallax } from 'react-scroll-parallax';
 import {
-    MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBCollapse, MDBBtn
+    MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBCollapse, MDBNavbarToggler
     } from "mdbreact";
-    import { BrowserRouter as Router } from 'react-router-dom';
 
-import Headerarticle from './header-article';
 
-    class NavbarPage extends Component {
+    class Header extends Component {
         state = {
           isOpen: false
         };
@@ -18,72 +15,43 @@ import Headerarticle from './header-article';
 
         render() {
             return (
-              <Router>
                 <MDBNavbar expand="md">
                   <MDBContainer>
                   <MDBNavbarBrand>
                     <img src="http://dwdomel.pl/logo-blog.png" alt="asd" className="navbar-logo mr-2 img-fluid"/>
                   </MDBNavbarBrand>
+                  <MDBNavbarToggler onClick={this.toggleCollapse} className="navbar-light"/>
                   <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                     <MDBNavbarNav right>
                       <MDBNavItem active>
-                        <MDBNavLink to="#!">HOME</MDBNavLink>
+                        <MDBNavLink className="d-none d-lg-block" to="/">HOME</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#!">OKNA</MDBNavLink>
+                        <MDBNavLink to="/okna">OKNA</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#!">DRZWI</MDBNavLink>
+                        <MDBNavLink to="/drzwi">DRZWI</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#!">BRAMY GARAŻOWE</MDBNavLink>
+                        <MDBNavLink to="/bramy-garazowe">BRAMY GARAŻOWE</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#!">WNĘTRZA</MDBNavLink>
+                        <MDBNavLink to="/wnetrza">WNĘTRZA</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#!">REALIZACJE</MDBNavLink>
+                        <MDBNavLink to="/realizacje">REALIZACJE</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#!">STRONA DWDOMEL</MDBNavLink>
+                        <MDBNavLink className="d-none d-lg-block" to="https://www.dwdomel.pl">STRONA DWDOMEL</MDBNavLink>
                       </MDBNavItem>
                       <MDBNavItem>
-                        <MDBNavLink to="#!">GDZIE KUPIĆ?</MDBNavLink>
+                        <MDBNavLink className="d-none d-xl-block" to="/gdzie-kupic">GDZIE KUPIĆ?</MDBNavLink>
                       </MDBNavItem>
                     </MDBNavbarNav>
                   </MDBCollapse>
                   </MDBContainer>
                 </MDBNavbar>
-                <div className="page-header header-filter clear-filter" data-parallax="true">
-                  <div className="container show-top">
-                    <div className="row h-100 w-100">
-                      <div className="col-xl-9 h-100">
-                     
-                        <div className="brand">
-                        <Parallax x={[10, -10]} tagOuter="figure">
-                          <MDBBtn className="btn m-0 mb-3">KATEGORIA</MDBBtn>>                          
-                          <h1 className="title2-main">Okna do domu - jakie wybrać i dlaczego?</h1>
-                          <h3 className="title2">Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.Start the Development With A Badass Bootstrap 4 UI Kit inspired by Material Design.</h3>
-                          </Parallax>
-                          </div>
-                        
-                      </div>
-                      <div className="col-xl-3 header-others">
-                      <Parallax x={[0, 40]} tagOuter="figure">
-                        <div className="header-others-cont">
-                          <Headerarticle/>
-                          <Headerarticle/>
-                          <Headerarticle/>
-                          <Headerarticle/>
-                        </div>
-                        </Parallax>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </Router>
             );
         }
     }
-export default NavbarPage
+export default Header

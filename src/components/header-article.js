@@ -3,9 +3,9 @@ import React from 'react';
 function Headerarticle(){
     return(
         <div>
-            <a href="#">
+            <a href="!#">
                 <p className="header-article-p">
-                    <a href="#">KATEGORIA</a>
+                    <a href="!#">KATEGORIA</a>
                     <br/>
                     <span>Wpisz to, czego szukasz i uruchom wyszukiwanie naciskając ENTER na klawiaturze.</span>
                 </p>
